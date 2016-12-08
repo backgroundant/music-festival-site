@@ -1,0 +1,258 @@
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    color: white;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+}
+
+.clearfix {
+    clear: both;    
+}
+
+.container {
+    display: block;
+    width: 100%; 
+}
+
+main {
+    background-image:url(../img/handsup.jpg);
+    background-repeat: repeat-y;
+    background-size: contain;
+}
+
+/*======================================================header area=================================================================*/
+
+header {
+    height: 200px;
+    background-image: url(../img/banner.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul#social-media {
+    position: absolute;
+    right: 0px;
+    top: 15px;
+}
+ul#social-media > li {
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+ul#social-media i {
+    font-size: 30px;
+}
+#facebook {
+    color: #4867AA;
+}
+#twitter {
+    color: #1DA1F2;
+}
+#instagram {
+    color: #8845C9;
+}
+#soundcloud {
+    color: #FC441E;
+}
+#vimeo {
+    color: #1AB7EA;
+}
+#envelope {
+    color: #FFFDD0;
+}
+ul#social-media a:hover {
+    color: white;
+}
+
+#info {
+    position: absolute;
+    top: 50px;
+    left: 250px;
+}
+#info > a {
+    display: block;
+    font-family: 'Special Elite', cursive;
+    font-size: 2em;
+    color: coral;
+    margin: 0;
+}
+
+
+#main-nav {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    bottom: 0;
+    background: rgba(255,127,80,0);
+    background: -moz-linear-gradient(top, rgba(255,127,80,0) 0%, rgba(255,127,80,0) 1%, rgba(255,127,80,0.9) 50%, rgba(255,127,80,0.9) 51%, rgba(255,127,80,0.9) 52%, rgba(255,127,80,0.9) 100%);
+    background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,127,80,0)), color-stop(1%, rgba(255,127,80,0)), color-stop(50%, rgba(255,127,80,0.9)), color-stop(51%, rgba(255,127,80,0.9)), color-stop(52%, rgba(255,127,80,0.9)), color-stop(100%, rgba(255,127,80,0.9)));
+    background: -webkit-linear-gradient(top, rgba(255,127,80,0) 0%, rgba(255,127,80,0) 1%, rgba(255,127,80,0.9) 50%, rgba(255,127,80,0.9) 51%, rgba(255,127,80,0.9) 52%, rgba(255,127,80,0.9) 100%);
+    background: -o-linear-gradient(top, rgba(255,127,80,0) 0%, rgba(255,127,80,0) 1%, rgba(255,127,80,0.9) 50%, rgba(255,127,80,0.9) 51%, rgba(255,127,80,0.9) 52%, rgba(255,127,80,0.9) 100%);
+    background: -ms-linear-gradient(top, rgba(255,127,80,0) 0%, rgba(255,127,80,0) 1%, rgba(255,127,80,0.9) 50%, rgba(255,127,80,0.9) 51%, rgba(255,127,80,0.9) 52%, rgba(255,127,80,0.9) 100%);
+    background: linear-gradient(to bottom, rgba(255,127,80,0) 0%, rgba(255,127,80,0) 1%, rgba(255,127,80,0.9) 50%, rgba(255,127,80,0.9) 51%, rgba(255,127,80,0.9) 52%, rgba(255,127,80,0.9) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff7f50', endColorstr='#ff7f50', GradientType=0 );
+}
+
+#main-nav > ul {
+     text-align: center;
+     margin-bottom: 5px;
+}
+
+#main-nav > ul > li {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+#main-nav > ul > li > a {
+    color: floralwhite;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+/* ===========================================DROPDOWN MENU==================================================================== */
+
+#main-nav > ul > li.dropdown {
+    position: relative;
+}
+#main-nav ul.submenu {
+    position: absolute;
+    display: none;
+    width: 220px;
+    text-align: left;
+    background-color: rgba(0,0,0,0.5);
+}
+#main-nav > ul > li.dropdown > ul > li > a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+    border-bottom: 1px solid white;
+}
+
+/* ==================================================HOVER EFFECT*================================================================  */
+
+#main-nav > ul > li:hover > a {
+    color: #ddb8f9;
+}
+#main-nav > ul > li.dropdown:hover > a {
+    background-color: rgba(0,0,0,0.5);
+}
+#main-nav > ul > li.dropdown > ul > li:hover > a {
+    color: #ddb8f9;
+}
+#main-nav > ul > li.dropdown:hover > ul.submenu {
+    display: block;
+}
+
+
+/*  =========================================================MAIN-C0NTENT=========================================================  */
+
+#promo {
+    position: relative;
+    margin-top: 200px;
+}
+#promo img {
+    width: 500px;
+    height: 646px;
+    margin-left: 50px;
+    margin-top: 30px;
+    border: 1px solid grey;
+}
+#promo article {
+    display: inline-block;
+    float:right;
+    width: 600px;
+    margin-top: 150px;
+    margin-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;    
+    background-color: rgba(0,0,0,0.5);
+}
+#promo-video {
+    margin-top: 200px;
+    text-align: center;   
+}
+#promo-video iframe {
+    border: 1px solid grey;
+}
+
+#first-sep {
+    margin-top: 70px;
+}
+
+#snd-sep {
+    margin-top: 150px;
+    margin-bottom: 115px;
+}
+
+#gallery { 
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    background-color: rgba(0,0,0,0.5);
+}
+#gallery img {
+    display: inline-block;
+    padding: 5px 0px 30px 0px;
+}
+
+
+#sponsor {
+    margin-top: 180px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#sponsor img {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+
+#attn {   
+    font-family: 'Orbitron', sans-serif;
+    font-weight: bold;
+    font-size: 0.8em;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+#attn ul {
+    margin: 0;
+}
+#attn ul li {
+    width: 120px;
+    text-align: center;
+    background-color: rgba(255,127,80,0.5);
+    padding: 5px;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+#attn ul li:hover a {
+    color: #ddb8f9;
+}
+
+
+footer {
+    margin-bottom: 0;
+    text-align: center;
+}
